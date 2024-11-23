@@ -15,3 +15,9 @@ package-reinstall:
 
 lint:
 	poetry run flake8 scripts
+
+tests:
+	poetry run pytest
+
+lint-test:
+	poetry run flake8 test

@@ -21,7 +21,7 @@ def multiply(*args):
 
 def divide(number=0, *args):
     if 0 in args:
-        raise ValueError('Can\'t divide by zero')
+        return None
     result = number
     for item in args:
         result /= item
