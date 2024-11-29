@@ -13,11 +13,11 @@ package-install:
 package-reinstall:
 	python3 -m pip install --user dist/*.whl --force-reinstall
 
-lint:
-	poetry run flake8 scripts
-
-tests:
+test:
 	poetry run pytest
 
-lint-test:
-	poetry run flake8 test
+lint:
+	poetry run flake8 tests scripts
+
+test-coverage:
+	poetry run pytest --cov

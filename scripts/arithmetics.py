@@ -26,3 +26,10 @@ def divide(number=0, *args):
     for item in args:
         result /= item
     return result
+
+
+def factorial(value):
+    if value <= 1:
+        return 1
+    else:
+        return (value * factorial(value - 1))
