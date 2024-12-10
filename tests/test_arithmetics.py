@@ -1,4 +1,5 @@
-from scripts.arithmetics import sum, divide, substraction, multiply, factorial
+from scripts.arithmetics import sum, divide, substraction, \
+    multiply, factorial, pow
 
 
 def test_sum():
@@ -38,3 +39,15 @@ def test_factorial():
     assert factorial(6) == 720
     assert factorial(0) == 1
     assert factorial(1) == 1
+
+
+def test_pow():
+    assert pow(15, 2) == 225
+    assert pow(1, 3) == 1
+    assert pow(18, 3) == 5832
+    assert pow(-1, 3) == -1
+    assert pow(-1, 2) == 1
+    assert pow(5, 2, 2) == 625
+    assert pow(5, -2) == 0.04
+    assert pow(5, 0) == 1
+    assert pow(0, 2) == 0

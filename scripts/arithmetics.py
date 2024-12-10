@@ -33,3 +33,10 @@ def factorial(value):
         return 1
     else:
         return (value * factorial(value - 1))
+
+
+def pow(number=0, *args):
+    result = number
+    for item in args:
+        result **= item
+    return result
