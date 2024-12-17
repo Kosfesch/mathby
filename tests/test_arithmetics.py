@@ -1,5 +1,5 @@
 from scripts.arithmetics import sum, divide, substraction, \
-    multiply, factorial, pow, degrees_to_radians, radians_to_degrees
+    multiply, factorial, pow, degrees_to_radians, radians_to_degrees, log
 
 
 def test_sum():
@@ -65,3 +65,14 @@ def test_radians_to_degrees():
     assert radians_to_degrees(10) == 572.96
     assert radians_to_degrees(8) == 458.37
     assert radians_to_degrees(0) == 0
+
+
+def test_log():
+    assert log(8, 0) is None
+    assert log(8, 1) is None
+    assert log(0) is None
+    assert log(1) == 0
+    assert log(8) == 3
+    assert log(16, 4) == 2
+    assert log(60, 2) == 5
+    assert log(56, 5) == 2
