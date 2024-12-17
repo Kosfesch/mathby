@@ -3,6 +3,12 @@ name = "mathby"
 version = "0.1.0"
 description = ""
 authors = ["Kosfesch <kostya2010123@mail.ru>"]
+packages = [
+  { include = "scripts" },
+]
+
+[tool.poetry.scripts]
+mathby = "scripts"
 
 [tool.poetry.dependencies]
 python = "^3.10"

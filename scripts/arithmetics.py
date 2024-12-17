@@ -1,3 +1,6 @@
+import math
+
+
 def sum(*args):
     result = 0
     for item in args:
@@ -40,3 +43,20 @@ def pow(number=0, *args):
     for item in args:
         result **= item
     return result
+
+
+def degrees_to_radians(value):
+    return round(value * math.pi / 180, 2)
+
+
+def radians_to_degrees(value):
+    return round(value * 180 / math.pi, 2)
+
+
+def log(value, base=2):
+    if base < 2 or value < 1:
+        return None
+    result = 0
+    while base**result <= value:
+        result += 1
+    return result - 1
