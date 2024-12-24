@@ -7,6 +7,7 @@ def max(value):
             max_value = item
     return max_value
 
+
 def min(value):
     if not value:
         return None
