@@ -7,16 +7,6 @@ def max(value):
             max_value = item
     return max_value
 
-
-def average(value):
-    if not value:
-        return None
-    result = 0
-    for item in value:
-        result += item
-    return round(result / len(value), 2)
-
-
 def min(value):
     if not value:
         return None
@@ -25,6 +15,15 @@ def min(value):
         if min_value > item:
             min_value = item
     return min_value
+
+
+def average(value):
+    if not value:
+        return None
+    result = 0
+    for item in value:
+        result += item
+    return round(result / len(value), 2)
 
 
 def sort(value):

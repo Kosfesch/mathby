@@ -8,7 +8,7 @@ def sum(*args):
     return result
 
 
-def substraction(number=0, *args):
+def subtraction(number=0, *args):
     result = number
     for item in args:
         result -= item

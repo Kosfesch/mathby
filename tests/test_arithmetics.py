@@ -1,4 +1,4 @@
-from scripts.arithmetics import sum, divide, substraction, \
+from scripts.arithmetics import sum, divide, subtraction, \
     multiply, factorial, pow, degrees_to_radians, radians_to_degrees, log
 
 
@@ -18,11 +18,11 @@ def test_divide():
     assert divide(5, 0) is None
 
 
-def test_substraction():
-    assert substraction(10, 5) == 5
-    assert substraction(1) == 1
-    assert substraction(18, 41, 16, 8) == -47
-    assert substraction(-1, -6, -50) == 55
+def test_subtraction():
+    assert subtraction(10, 5) == 5
+    assert subtraction(1) == 1
+    assert subtraction(18, 41, 16, 8) == -47
+    assert subtraction(-1, -6, -50) == 55
 
 
 def test_multiply():
